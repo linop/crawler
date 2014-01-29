@@ -12,4 +12,5 @@ pom-*.xml
 *.swp
 doc
 .svn
+
 *.properties
