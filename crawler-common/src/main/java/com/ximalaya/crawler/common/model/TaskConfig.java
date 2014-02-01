@@ -1,16 +1,17 @@
 /*
  * 文件名称: TaskConfig.java Copyright 2011-2014 Nali All right reserved.
  */
-package com.ximalaya.crawler.center.model;
+package com.ximalaya.crawler.common.model;
 
 import java.util.Date;
+
+import com.ximalaya.crawler.common.model.base.BaseModel;
 
 /**
  * @author ted
  */
-public class TaskConfig {
+public class TaskConfig extends BaseModel {
     private Long id;
-    private Long pid; // 父id,没有为0
     private String name;//名称
     private String url; // 任务的url
     private Short priority; //任务的优先级
@@ -28,14 +29,6 @@ public class TaskConfig {
 
     public void setId(Long id) {
         this.id = id;
-    }
-
-    public Long getPid() {
-        return pid;
-    }
-
-    public void setPid(Long pid) {
-        this.pid = pid;
     }
 
     public String getName() {
@@ -120,9 +113,9 @@ public class TaskConfig {
 
     @Override
     public String toString() {
-        return "TaskConfig [id=" + id + ", pid=" + pid + ", name=" + name + ", url=" + url
-            + ", priority=" + priority + ", createdAt=" + createdAt + ", updatedAt=" + updatedAt
-            + ", startAt=" + startAt + ", stopAt=" + stopAt + ", interval=" + interval
-            + ", cronExp=" + cronExp + ", state=" + state + "]";
+        return "TaskConfig [id=" + id + ", name=" + name + ", url=" + url + ", priority="
+            + priority + ", createdAt=" + createdAt + ", updatedAt=" + updatedAt + ", startAt="
+            + startAt + ", stopAt=" + stopAt + ", interval=" + interval + ", cronExp=" + cronExp
+            + ", state=" + state + "]";
     }
 }

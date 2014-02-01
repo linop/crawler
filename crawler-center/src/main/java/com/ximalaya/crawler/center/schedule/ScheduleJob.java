@@ -22,8 +22,6 @@ public class ScheduleJob implements Job {
         // get task config id
         Long id = context.getTrigger().getJobDataMap().getLong("task.config.id");
         Long id2 = context.getJobDetail().getJobDataMap().getLong("task.config.id");
-        System.out.println("trigger data map id is " + id);
-        System.out.println("jobdetail data map id is " + id2);
         // select task config by id from database
         // then generate new task, and insert into database
     }
