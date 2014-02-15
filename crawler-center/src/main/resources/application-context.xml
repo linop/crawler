@@ -26,7 +26,8 @@
 				<value>classpath:redis.properties</value>
 				<value>classpath:urls.properties</value>
 				<value>classpath:conf.properties</value>
-				<value>classpath:thrift.properties</value>
+                <value>classpath:thrift.properties</value>
+                <value>classpath:reminder.properties</value>
 			</list>
 		</property>
 	</bean>
@@ -82,4 +83,5 @@
 		<property name="sqlMapClient" ref="sqlMapClient" />
 	</bean>
 	<import resource="classpath:application-schedule-context.xml" />
+    <import resource="classpath:application-reminder-context.xml" />
 </beans>
