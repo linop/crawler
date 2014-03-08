@@ -47,6 +47,12 @@ public class SohuAnalyzer extends AbstractAnalyzer {
         return urls;
     }
 
+    /**
+     * get sohu video's real download path by it's mobile web page
+     * which its mp4 urls are just in its html page.
+     * @param url
+     * @return
+     */
     public List<String> getRealUrlsBySohuMobile(String url) {
         String mainPage = fetch(SohuParser.sohuSite, url);
         String vid = getVidFromPage(mainPage);

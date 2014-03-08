@@ -48,7 +48,7 @@ public abstract class AbstractFetcher {
     }
 
     /**
-     * get html page string of url, request properties can be set in
+     * get html page string of url, request properties can be set with {@link us.codecraft.webmagic.Site}
      * @param site
      * @param url
      * @return
