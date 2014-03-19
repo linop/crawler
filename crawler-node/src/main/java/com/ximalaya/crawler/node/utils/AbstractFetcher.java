@@ -87,6 +87,12 @@ public abstract class AbstractFetcher {
                 // charset
                 if (charset == null) {
                     String value = httpResponse.getEntity().getContentType().getValue();
+                    System.out.println("--------------------------");
+                    System.out.println("--------------------------");
+                    System.out.println("--------------------------");
+                    System.out.println("--------------------------");
+                    System.out.println("--------------------------");
+                    System.out.println(value);
                     charset = UrlUtils.getCharset(value);
                 }
                 // String html = IOUtils.toString(httpResponse.getEntity()

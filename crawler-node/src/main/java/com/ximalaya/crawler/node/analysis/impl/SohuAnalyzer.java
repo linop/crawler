@@ -91,6 +91,7 @@ public class SohuAnalyzer extends AbstractAnalyzer {
      */
     public List<String> getRealUrlsByApi(String url) {
         String mainPage = fetch(SohuParser.sohuSite, url);
+        System.out.println(mainPage);
         String vid = getVidFromPage(mainPage);
         log.debug("sohu analyzer vid is {}", vid);
         if (vid == null) {

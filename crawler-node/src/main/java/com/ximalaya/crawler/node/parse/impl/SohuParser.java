@@ -13,7 +13,7 @@ public class SohuParser extends AbstractParser {
 
     static {
         sohuSite.addHeader(HttpConstants.USER_AGENT, HttpConstants.CHROME_V33);
-        sohuSite.setCharset("GBK");
+//        sohuSite.setCharset("GBK");
         sohuSite.setDomain("tv.sohu.com");
         // timeout 100s
         sohuSite.setTimeOut(1000 * 1000);
